@@ -1,0 +1,50 @@
+# Python-specific exclusions
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.env/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Dependency directories
+*.egg-info/
+dist/
+build/
+
+# Cache files
+*.cache
+.pytest_cache/
+.hypothesis/
+
+# Model checkpoints (exclude large files unless explicitly included)
+bert_construction_ner/
+bert_construction_ner/
+bert_ner_results/
+
+# Large datasets (optional: include datasets in repo if small)
+*.json
+
+# Specific CSV files to exclude (add your filenames here)
+#labeled_data.csv
+#output_data.csv
+#temp_data.csv
+
+# Optionally exclude all CSV files
+*.csv
+*.docx
+
+# Miscellaneous
+*.DS_Store
+*.swp
+*.bak

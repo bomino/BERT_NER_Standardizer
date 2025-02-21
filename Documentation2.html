@@ -1,0 +1,456 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comprehensive Document: Premium Modern Styling</title>
+    <style>
+        /* 
+        ----------------------------------------------------------------
+        RESET & BASE
+        ----------------------------------------------------------------
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 100%;
+        }
+
+        body {
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            font-size: 12pt;
+            line-height: 1.6;
+            color: #2a2a2a;
+            margin: 0;
+            background: linear-gradient(to bottom right, #ffffff 50%, #f7f9fc 100%);
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        CONTAINER
+        ----------------------------------------------------------------
+        */
+        .container {
+            width: 7.3in;
+            /* A comfortable width for Word-like layout */
+            max-width: 100%;
+            margin: 1in auto;
+            background-color: #fff;
+            padding: 1in;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        HEADINGS
+        ----------------------------------------------------------------
+        */
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 0.4em;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            position: relative;
+            margin-top: 0;
+            color: #333;
+            margin-bottom: 0.3in;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(to right, #0d3b66, #00bbf0);
+            margin: 0.4em auto 0;
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-top: 0.6in;
+            color: #0d3b66;
+            text-transform: uppercase;
+            position: relative;
+            letter-spacing: 0.5px;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(to right, #0d3b66, #00bbf0);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 0.4in;
+            color: #141414;
+            border-left: 4px solid #0d3b66;
+            padding-left: 0.5em;
+            letter-spacing: 0.2px;
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        PARAGRAPHS & TEXT
+        ----------------------------------------------------------------
+        */
+        p {
+            margin-bottom: 0.3in;
+        }
+
+        strong {
+            font-weight: 700;
+            color: #0d3b66;
+        }
+
+        em {
+            color: #00bbf0;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.95em;
+            color: #b33;
+            border-radius: 3px;
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        LISTS
+        ----------------------------------------------------------------
+        */
+        ul {
+            margin-bottom: 0.3in;
+            margin-left: 1.2em;
+        }
+
+        li {
+            margin-bottom: 0.15in;
+            list-style-type: disc;
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        SECTIONS
+        ----------------------------------------------------------------
+        */
+        .section {
+            margin-bottom: 0.5in;
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        HORIZONTAL RULE
+        ----------------------------------------------------------------
+        */
+        hr {
+            border: none;
+            border-top: 2px dashed #ccc;
+            margin: 0.5in 0;
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        TABLES
+        ----------------------------------------------------------------
+        */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 0.3in;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: linear-gradient(to right, #0d3b66, #00bbf0);
+            color: #fff;
+            text-align: left;
+            font-weight: 700;
+            padding: 0.4em 0.6em;
+        }
+
+        td {
+            padding: 0.4em 0.6em;
+        }
+
+        /* 
+        ----------------------------------------------------------------
+        FOOTER
+        ----------------------------------------------------------------
+        */
+        .footer-note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 0.8in;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 0.2in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Comprehensive Document</h1>
+        <p style="text-align:center; font-size: 1.2em; margin-bottom:0.3in;">
+            <strong>Enhancing Construction Product Description Standardization with BERT NER</strong>
+        </p>
+
+        <hr>
+
+        <div class="section">
+            <p>
+                This document provides a detailed overview of the process undertaken to enhance the standardization of
+                construction product descriptions using a BERT-based Named Entity Recognition (NER) model,
+                complemented by rule-based techniques. It outlines the evolution of the approach, the challenges
+                encountered,
+                the solutions implemented, and the final integrated system designed to achieve high accuracy and
+                practical
+                utility in the construction domain.
+            </p>
+        </div>
+
+        <h2>1. Initial Approach: Fine-Tuning BERT for NER</h2>
+
+        <div class="section">
+            <h3>1.1 Objective</h3>
+            <p>
+                The primary goal was to standardize construction product descriptions by extracting key entities such as
+                <strong>BRAND</strong>, <strong>TYPE</strong>, <strong>SIZE</strong>, <strong>SPEC</strong>,
+                <strong>QUANTITY</strong>, <strong>PACKAGING</strong>, and <strong>ITEMNUM</strong> using a
+                BERT-based NER model. These entities would then be used to create consistent, structured descriptions.
+            </p>
+
+            <h3>1.2 Setup</h3>
+            <ul>
+                <li><strong>Model:</strong> The <em>bert-base-uncased</em> model was selected and fine-tuned for token
+                    classification.</li>
+                <li><strong>Dataset:</strong> An initial dataset of 376 labeled items from <em>output.json</em> was
+                    used,
+                    split into 300 training examples and 76 validation examples.</li>
+                <li><strong>Training:</strong> The model was trained for 10 epochs with a learning rate of
+                    <code>1e-5</code>.
+                </li>
+                <li><strong>Evaluation Metrics:</strong> Performance was assessed using accuracy, precision, recall, and
+                    F1 score.</li>
+            </ul>
+
+            <h3>1.3 Challenges Identified</h3>
+            <ul>
+                <li>
+                    <strong>Subword Tokenization:</strong> BERT's WordPiece tokenization split tokens like
+                    <code>476043</code>
+                    into subwords (<code>47</code>, <code>##60</code>, <code>##43</code>), resulting in fragmented
+                    entity predictions.
+                </li>
+                <li>
+                    <strong>Label Imbalance:</strong> Rare labels, such as <em>I-BRAND</em> (only 3 instances) and
+                    <em>I-TYPE</em> (9 instances), were underrepresented, causing missed entities like
+                    <code>TAPCON</code> (brand) and <code>SDS DRILLBIT</code> (type).
+                </li>
+                <li>
+                    <strong>Entity Detection Errors:</strong> The model sometimes mislabeled <code>"x"</code> in
+                    <code>1/4-IN X 7-IN</code> as <em>SPEC</em> instead of recognizing it as part of <em>SIZE</em>.
+                </li>
+            </ul>
+
+            <h3>1.4 Initial Results</h3>
+            <p><strong>Validation F1 Score:</strong> Achieved <em>92.15%</em> at epoch 10.</p>
+            <p>
+                <strong>Test Prediction Issues:</strong> Predictions showed fragmented <em>ITEMNUM</em> values, missed
+                <em>BRAND</em> and <em>TYPE</em> entities, and incorrect labeling of separators like
+                <code>"x"</code>.
+            </p>
+        </div>
+
+        <h2>2. Enhancements to Address Challenges</h2>
+
+        <div class="section">
+            <p>
+                To overcome the limitations of the initial approach, several enhancements were introduced, focusing on
+                tokenization, label imbalance, dataset size, and post-processing.
+            </p>
+
+            <h3>2.1 Subword Tokenization Handling</h3>
+            <p><strong>Issue:</strong> Subword tokenization led to inconsistent labeling across subwords of a single
+                token (e.g., <code>476043</code> split into <code>47</code>, <code>##60</code>, <code>##43</code>).</p>
+            <p><strong>Solution:</strong> The <code>tokenize_and_align_labels</code> function was modified to assign the
+                same label to all subwords of a token, ensuring consistency.</p>
+            <p><strong>Impact:</strong> Proper entity grouping during inference, with
+                <code>aggregation_strategy="simple"</code> merging subwords into cohesive entities.
+            </p>
+
+            <h3>2.2 Addressing Label Imbalance</h3>
+            <p><strong>Issue:</strong> The scarcity of rare labels like <em>I-BRAND</em> and <em>I-TYPE</em> resulted in
+                poor detection of corresponding entities.</p>
+            <p><strong>Solution:</strong> Rare labels were oversampled by duplicating examples containing them,
+                increasing their representation in the training data.</p>
+            <p><strong>Impact:</strong> Improved recognition of rare entities, though some detection challenges
+                remained.</p>
+
+            <h3>2.3 Improving Training with a Larger Dataset</h3>
+            <p><strong>Action:</strong> The dataset was expanded to 1296 labeled items, split into 1036 training
+                examples and 260 validation examples.</p>
+            <p><strong>Result:</strong> Training on this larger dataset yielded a peak validation F1 score of
+                <em>99.00%</em> at epoch 13, with significantly better detection of rare entities like <em>BRAND</em>.
+            </p>
+
+            <h3>2.4 Post-Processing for Subword Merging</h3>
+            <p><strong>Issue:</strong> Subwords, even when correctly labeled, were not merged into readable entities
+                (e.g., <code>47</code>, <code>##60</code>, <code>##43</code> instead of <code>476043</code>).</p>
+            <p><strong>Solution:</strong> A <code>merge_subwords</code> post-processing function was implemented to
+                combine subwords into complete tokens.</p>
+            <p><strong>Impact:</strong> Ensured entities like <code>476043</code> were presented as single, cohesive
+                units in the output.</p>
+        </div>
+
+        <h2>3. Integrated Solution: <em>MLConstructionStandardizer</em> Class</h2>
+
+        <div class="section">
+            <p>
+                The final solution, encapsulated in the <em>MLConstructionStandardizer</em> class,
+                combines the fine-tuned BERT NER model with rule-based techniques to deliver a robust
+                standardization process.
+            </p>
+
+            <h3>3.1 BERT NER Model Integration</h3>
+            <ul>
+                <li><strong>Model:</strong> The fine-tuned BERT model performs token classification with a confidence
+                    threshold of <em>0.9</em> to filter out low-confidence predictions.</li>
+                <li><strong>Entity Extraction:</strong> Extracts entities such as <em>BRAND</em>, <em>TYPE</em>,
+                    <em>SIZE</em>, etc., with subword merging to ensure cohesive tokens.
+                </li>
+            </ul>
+
+            <h3>3.2 Selective Regex Fallback</h3>
+            <p><strong>Purpose:</strong> Guarantees the capture of critical entities like <em>SIZE</em> when the BERT
+                model fails to detect them.</p>
+            <p><strong>Implementation:</strong> If no <em>SIZE</em> entity is identified, a regex pattern is applied to
+                extract it from the text.</p>
+            <p><strong>Example:</strong> Extracts <code>1/4-IN X 7-IN</code> as a <em>SIZE</em> entity if missed by the
+                model.</p>
+
+            <h3>3.3 Entity-Specific Standardization</h3>
+            <ul>
+                <li><strong>SIZE Standardization:</strong> Normalizes size formats for consistency (e.g.,
+                    <code>1/4-IN X 7-IN</code> becomes <code>1/4INX7IN</code>).
+                </li>
+                <li><strong>Domain-Specific Term Mapping:</strong> Converts construction terms (e.g.,
+                    <strong>SCREW</strong> to <strong>SCR</strong>) for uniformity.
+                </li>
+            </ul>
+
+            <h3>3.4 Full Regex Fallback</h3>
+            <p><strong>Trigger:</strong> Activated when the BERT model detects no entities in a description.</p>
+            <p><strong>Function:</strong> Applies a comprehensive set of regex patterns to standardize measurements,
+                units, and construction-specific terms.</p>
+            <p><strong>Benefit:</strong> Ensures standardization even in cases of complete model failure.</p>
+
+            <h3>3.5 Error Handling and Logging</h3>
+            <ul>
+                <li><strong>Error Handling:</strong> Uses <code>try-except</code> blocks to manage NER pipeline failures
+                    gracefully, preventing crashes.</li>
+                <li><strong>Logging:</strong> Records entity extraction outcomes, fallback activations, and errors for
+                    debugging and performance monitoring.</li>
+            </ul>
+        </div>
+
+        <h2>4. Final Performance and Results</h2>
+
+        <div class="section">
+            <h3>4.1 Training Results</h3>
+            <ul>
+                <li><strong>Peak Validation F1 Score:</strong> Reached <em>99.00%</em> at epoch 13 with the expanded
+                    dataset of 1296 items.</li>
+                <li><strong>Test Prediction Example:</strong> Successfully standardized
+                    <code>ITEM # 476043 TAPCON 1/4-IN X 7-IN SDS DRILLBIT</code>
+                    to <code>TAPCON - SDS DRILLBIT - 1/4INX7IN</code>.
+                </li>
+            </ul>
+
+            <h3>4.2 Key Improvements</h3>
+            <ul>
+                <li><strong>Subword Merging:</strong> Correctly unified tokenized entities (e.g., <code>476043</code>
+                    instead of <code>47</code>, <code>##60</code>, <code>##43</code>).</li>
+                <li><strong>Rare Entity Detection:</strong> Enhanced recognition of <em>BRAND</em> and <em>TYPE</em>
+                    through oversampling and a larger dataset.</li>
+                <li><strong>Standardization Consistency:</strong> Achieved uniform formatting for sizes and terms via
+                    post-processing and mapping.</li>
+            </ul>
+
+            <h3>4.3 Remaining Challenges</h3>
+            <p>
+                Some rare entities may still be missed, and certain complex sizes (like <code>1/4-IN X 7-IN</code>)
+                can be split into multiple parts. Additional refinements to subword merging and label balancing
+                can further address these challenges.
+            </p>
+        </div>
+
+        <h2>5. Recommendations for Future Enhancements</h2>
+
+        <div class="section">
+            <ul>
+                <li><strong>Increased Oversampling:</strong> Apply more aggressive oversampling or class weighting to
+                    boost detection of rare labels.</li>
+                <li><strong>Domain-Specific Pretraining:</strong> Fine-tune a BERT model pretrained on
+                    construction-related texts for better contextual understanding.</li>
+                <li><strong>Advanced Post-Processing:</strong> Develop more sophisticated rules to merge fragmented
+                    entities (e.g., combining <code>1/4-IN</code> and <code>7-IN</code> into a single <em>SIZE</em>
+                    entity).</li>
+                <li><strong>User-Defined Entity Ordering:</strong> Provide flexibility for users to customize the format
+                    of standardized descriptions.</li>
+            </ul>
+        </div>
+
+        <h2>6. Conclusion</h2>
+        <div class="section">
+            <p>
+                The development of the <em>MLConstructionStandardizer</em> represents a significant step forward in
+                standardizing construction product descriptions. By integrating a fine-tuned BERT NER model with
+                selective regex fallbacks and post-processing, the solution combines machine learning precision with
+                rule-based reliability. With a validation F1 score of <em>99.00%</em> and the ability to handle complex
+                descriptions, it is well-suited for practical use in the construction industry. Future work can focus
+                on addressing the remaining challenges around rare entity detection and entity grouping to further
+                elevate performance and adaptability.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="footer-note">
+            <p><strong>Document Version:</strong> Premium Modern Styling (Generated by MLawali with ChatGPT)</p>
+        </div>
+
+    </div> <!-- container -->
+</body>
+
+</html>
